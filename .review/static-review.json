@@ -1,0 +1,157 @@
+{
+  "generator": "repository-static-triage",
+  "version": "1.0",
+  "repository": "vikasdotvivek/f1tenth_system",
+  "revision": "6364403d0250f89ddde0bc589a27dd5abb186884",
+  "tracked_files": 28,
+  "scanned": [
+    {
+      "path": "f1tenth_stack/f1tenth_stack/__init__.py",
+      "lines": 0,
+      "bytes": 0
+    },
+    {
+      "path": "f1tenth_stack/f1tenth_stack/tf_publisher.py",
+      "lines": 50,
+      "bytes": 1475
+    },
+    {
+      "path": "f1tenth_stack/f1tenth_stack/throttle_interpolator.py",
+      "lines": 125,
+      "bytes": 5852
+    },
+    {
+      "path": "f1tenth_stack/launch/bringup_launch.py",
+      "lines": 141,
+      "bytes": 4978
+    },
+    {
+      "path": "f1tenth_stack/setup.py",
+      "lines": 31,
+      "bytes": 977
+    },
+    {
+      "path": "f1tenth_stack/test/test_copyright.py",
+      "lines": 23,
+      "bytes": 790
+    },
+    {
+      "path": "f1tenth_stack/test/test_flake8.py",
+      "lines": 25,
+      "bytes": 884
+    },
+    {
+      "path": "f1tenth_stack/test/test_pep257.py",
+      "lines": 23,
+      "bytes": 803
+    },
+    {
+      "path": "scripts/resume_container.sh",
+      "lines": 8,
+      "bytes": 218
+    },
+    {
+      "path": "scripts/run_container.sh",
+      "lines": 13,
+      "bytes": 563
+    }
+  ],
+  "skipped": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": ".github/workflows/code-improvement-review.yml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": ".gitignore",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": ".gitmodules",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "LICENSE",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "README.md",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "ackermann_mux",
+      "reason": "symlink/submodule/nonregular"
+    },
+    {
+      "path": "f1tenth_stack/config/f1tenth_online_async.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "f1tenth_stack/config/joy_teleop.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "f1tenth_stack/config/mux.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "f1tenth_stack/config/sensors.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "f1tenth_stack/config/vesc.yaml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "f1tenth_stack/package.xml",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "f1tenth_stack/resource/f1tenth_stack",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "f1tenth_stack/setup.cfg",
+      "reason": "non-source format; content not audited"
+    },
+    {
+      "path": "teleop_tools",
+      "reason": "symlink/submodule/nonregular"
+    },
+    {
+      "path": "vesc",
+      "reason": "symlink/submodule/nonregular"
+    }
+  ],
+  "manifests": [
+    "f1tenth_stack/package.xml",
+    "f1tenth_stack/setup.py"
+  ],
+  "conventional_test_paths": [
+    "f1tenth_stack/test/test_copyright.py",
+    "f1tenth_stack/test/test_flake8.py",
+    "f1tenth_stack/test/test_pep257.py"
+  ],
+  "findings": [
+    {
+      "rule": "silent-except",
+      "priority": "P2",
+      "path": "f1tenth_stack/f1tenth_stack/tf_publisher.py",
+      "line": 47,
+      "title": "Exception handler only passes",
+      "recommendation": "Decide whether the error is recoverable; surface nonrecoverable failures instead of silently continuing.",
+      "status": "review-required",
+      "source": "https://github.com/vikasdotvivek/f1tenth_system/blob/6364403d0250f89ddde0bc589a27dd5abb186884/f1tenth_stack/f1tenth_stack/tf_publisher.py#L47"
+    }
+  ],
+  "total_findings": 1,
+  "findings_omitted": 0,
+  "execution": "No repository code, tests, builds or hardware were executed."
+}
